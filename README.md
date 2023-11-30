@@ -1,8 +1,8 @@
 # AWS-IoT-TempSensor
-This project was an IoT-project where the temperature was measured with an Esp32 and the was sent to a database in AWS and visualized with Grafana. Outdoor temperature data was also collected with SMHI API.
+This was a school project in the course IoT and cloud services which aimed to get a better understanding of working with clouds and to create an overall IoT solution, data collection from a sensor all the way to some kind of visualization of that data. In this IoT-project the temperature was measured with an Esp32 and was then sent to a database in AWS and visualized with Grafana. Outdoor temperature data was also collected with SMHI API.
 
 ## Architechture and overview
-The temperature was measured and collected by a sensor and a esp32. The data was then sent by MQTT to AWS and with a rule setting sent to a database. Also outdoor temperature from SMHI API was collected and sent to the same database using a lambda function in AWS Lambda. In the ens all data could be visualized by Grafana.
+The temperature was measured and collected by a sensor and an Esp32. The data was then sent by MQTT to AWS and with a rule setting sent to a database. Also outdoor temperature from SMHI API was collected and sent to the same database using a lambda function in AWS Lambda. In the ens all data could be visualized by Grafana.
 
 ***Picutre displaying the flowchart.***
 
