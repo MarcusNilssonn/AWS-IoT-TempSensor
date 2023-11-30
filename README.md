@@ -25,7 +25,7 @@ The database was created by Timestream because of its flexibility with Grafana.
 ### API
 As an addition the project also aimed to learn about APIs. So with AWS lambda code was written in Python to collect data from SMHI open API. The data was also sent to the same database as above.
 ### Visualization
-The project used Grafana for visualization.
+The project used Grafana for visualization where SQL query was used to retrieve values from the database.
 
 ***Picutre displaying Grafana.***
 
