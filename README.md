@@ -9,6 +9,6 @@ The temperature was measured and collected by a sensor and a esp32. The data was
 ![Flowchart](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/b6bfaff4-1657-4576-ac9f-5b040e421af9)
 
 ## Project description
-#### Hardware
+### Hardware
 This project used an Esp32 and a tmp36 temperature sensor.
 
