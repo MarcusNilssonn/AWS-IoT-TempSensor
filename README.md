@@ -10,6 +10,9 @@ The temperature was measured and collected by a sensor and a esp32. The data was
 ## Project description
 ### Hardware
 This project used an Esp32 and a tmp36 temperature sensor. The code was written in Arduino IDE.
+
+***Picutre displaying the sensor and the Esp32.***
+![Skärmbild_Hårdvara](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/3c0c084d-0862-4a97-83d0-90501726f468)
 ### IoT Core
 In IoT Core a "thing" was created with the right policys and certificates. The credentials were placed in a headerfile in Arduino IDE. The project used MQTT for sending the data and a rule was set in AWS to send it further to the database.
 The database was created by Timestream because of its flexibility with Grafana.
