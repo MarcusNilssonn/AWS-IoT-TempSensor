@@ -38,8 +38,7 @@ In short the code uses the Boto3 library to create a Timestream client. The scri
 The project used Grafana for visualization, an analytics site which can be used to visualize, analyze and make use of data. A dashboard was created with connection to the Amazon Timestream database, where SQL Query was used to retrieve values from the database.
 
 ***Picutre displaying Grafana.***
-
-![Skärmbild_Grafana](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/4750ce7c-22f1-4359-9ce3-bc944a54d163)
+![Skärmbild_Grafana_2 0](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/414e0689-ffbb-4ebc-86f6-4babaa5980b5)
 
 ### Security
 The project has a variety when it comes to security where some good security work was made but with room for imporvements. The connection between hardware and AWS heavily relies on security by AWS where certificates could only be downloaded once and were together with the endpoint all placed in a secret header file and not hardcoded in the actual main code. The lambda code does not use any sensitive information but should however not have the table and tablename hardcoded since it opens up for any user to send requests to that database. The lambda code could also use a try/catch to catch any errors.
