@@ -1,8 +1,8 @@
 # AWS-IoT-TempSensor
-This was a school project in the course IoT and cloud services which aimed to get a better understanding of working with clouds and to create an overall IoT solution, data collection from a sensor all the way to some kind of visualization of that data. In this IoT-project the temperature was measured with an Esp32 and was then sent to a database in AWS and visualized with Grafana. Outdoor temperature data was also collected with SMHI API.
+This was a school project in the course IoT and cloud services which aimed to get a better understanding of working with clouds and to create an overall IoT solution, data collection from a sensor all the way to some kind of visualization of that data. In this IoT-project the temperature was measured with an ESP32 and was then sent to a database in AWS and visualized with Grafana. Outdoor temperature data was also collected with SMHI API.
 
 ## Architechture and overview
-The temperature was measured and collected by a sensor and an Esp32. The data was then sent by MQTT to AWS and with a rule setting sent to a database. Also outdoor temperature from SMHI API was collected and sent to the same database using a lambda function in AWS Lambda. In the end all data could be visualized by Grafana.
+The temperature was measured and collected by a sensor and an ESP32. The data was then sent by MQTT to AWS and with a rule setting sent to a database. Also outdoor temperature from SMHI API was collected and sent to the same database using a lambda function in AWS Lambda. In the end all data could be visualized by Grafana.
 
 ***Picutre displaying the flowchart.***
 
@@ -10,14 +10,16 @@ The temperature was measured and collected by a sensor and an Esp32. The data wa
 
 ## Project description
 ### Hardware
-This project used an Esp32 and a tmp36 temperature sensor. The code was written in Arduino IDE.
+This project used an ESP32 and a TMP36 temperature sensor. The ESP32 is a budget microcontroller by Espressif Systems. It was used mainy because its reduced cost and because of Wi-Fi capability which makes it suitable for IoT-apps. The TMP36 is an analog temperature sensor with three pins and which gives an ouput in voltage.
+
+The code was written in Arduino IDE where a function measured the voltage (temperature) and calculated it in Celcius. 
 
 ***Picutre displaying the sensor and the Esp32.***
 
 ![Skärmbild 2023-11-30 191155](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/a2686df6-0de1-4ce2-b050-7ae6629faa4b)
 ### AWS IoT Core
 In IoT Core a "thing" was created with the right policys and certificates. The credentials were placed in a headerfile in Arduino IDE. The project used MQTT for sending the data to a topic and a rule was set in AWS to send it further to the database.
-The database was created by Timestream because of its flexibility with Grafana.
+The database was created by Timestream where all the data was sent. At first the project used DynamoDB but switched later on to Timestream because of its flexibility with Grafana.
 
 ***Picutre displaying the database.***
 
