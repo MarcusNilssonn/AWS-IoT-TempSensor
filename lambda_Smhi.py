@@ -1,7 +1,8 @@
-import boto3
-import json
-import urllib3
+import boto3 #Lib for interacting with AWS services.
+import json #Lib for handling JSON data.
+import urllib3 #Lib for making HTTP req.
 
+#Initilaze a timstream client.
 timestreamWrite = boto3.client('timestream-write')
 
 def lambda_handler(event, context):
