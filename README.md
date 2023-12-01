@@ -12,7 +12,7 @@ The temperature was measured and collected by a sensor and an ESP32. The data wa
 ### Hardware
 This project used an ESP32 and a TMP36 temperature sensor. The ESP32 is a budget microcontroller by Espressif Systems. It was used mainy because its reduced cost and because of Wi-Fi capability which makes it suitable for IoT-apps. The TMP36 is an analog temperature sensor with three pins and gives an ouput in voltage.
 
-The code was written in Arduino IDE where a function measured the voltage (temperature) and calculated it in Celcius. 
+The code was written in Arduino IDE where a function was created to measure the voltage (temperature) and calculated it in Celcius. 
 
 ***Picutre displaying the sensor and the Esp32.***
 
