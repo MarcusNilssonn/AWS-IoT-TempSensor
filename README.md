@@ -35,7 +35,7 @@ In short the code uses the Boto3 library to create a Timestream client. The scri
 ![Skärmbild_SMHI](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/e7c6c1b8-b99f-4424-9abe-fd620507952c)
 
 ### Visualization
-The project used Grafana for visualization where SQL query was used to retrieve values from the database.
+The project used Grafana for visualization, an analytics site which can be used to visualize, analyze and make use of data. A dashboard was created with connection to the Amazon Timestream database, where SQL Query was used to retrieve values from the database.
 
 ***Picutre displaying Grafana.***
 
