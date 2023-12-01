@@ -28,6 +28,12 @@ The database was created by Timestream where all the data was sent. At first the
 As an addition the project also aimed to learn about APIs. So with AWS lambda, code was written in Python to collect data from SMHI open API. The weather station was set to Uppsala. After collection the data was sent to the same database in timestream as above.
 
 In short the code uses the Boto3 library to create a Timestream client. The script makes an Http Get Request to fetch data from the weather station and loads it into a Python dictonary. The data is then transformed into a structure for Timestream and inserted to the database.
+
+***Link to the code:*** https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/blob/main/lambda_Smhi.py
+
+***Picutre displaying weather values in to the database.***
+![Skärmbild_SMHI](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/e7c6c1b8-b99f-4424-9abe-fd620507952c)
+
 ### Visualization
 The project used Grafana for visualization where SQL query was used to retrieve values from the database.
 
