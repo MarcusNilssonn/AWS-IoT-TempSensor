@@ -24,6 +24,8 @@ The database was created by Timestream because of its flexibility with Grafana.
 ![Skärmbild_DB_API](https://github.com/MarcusNilssonn/AWS-IoT-TempSensor/assets/113011450/82a170b1-3523-406f-9ffe-6b57b888255f)
 ### API
 As an addition the project also aimed to learn about APIs. So with AWS lambda, code was written in Python to collect data from SMHI open API. The weather station was set to Uppsala. After collection the data was sent to the same database in timestream as above.
+
+In short the code uses the Boto3 library to create a Timestream client. The script makes an Http Get Request to fetch data from the weather station and loads it into a Python dictonary. The data is then transformed into a structure for Timestream an inserted to the database.
 ### Visualization
 The project used Grafana for visualization where SQL query was used to retrieve values from the database.
 
