@@ -42,3 +42,5 @@ The project used Grafana for visualization, an analytics site which can be used 
 
 ### Security
 The project has a variety when it comes to security where some good security work was made but with room for imporvements. The connection between hardware and AWS heavily relies on security by AWS where certificates could only be downloaded once and were together with the endpoint all placed in a secret header file and not hardcoded in the actual main code. The lambda code does not use any sensitive information but should however not have the table and tablename hardcoded since it opens up for any user to send requests to that database. For example could AWS Key Management Service be used to help manage and protect keys and credentials. The lambda code could also use a try/catch to catch any errors. 
+
+Last a cloud service like AWS gives the possibility for scalability, which is one of the mean reasons to use it. As your application and service grows AWS helps to scale and lets the custome only pay for whats needed.
